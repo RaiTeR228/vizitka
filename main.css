@@ -1,0 +1,182 @@
+
+body {
+  font-family: Roboto, sans-serif;
+}
+
+.container {
+  padding: 0 40px;
+  margin-left: 80px;
+}
+
+  /* Свойства ссылок */
+a {
+  display: inline-block;
+  text-decoration:none;
+  margin-bottom: 1.3em;
+  position: relative;
+  right: -15px;
+}
+
+  /* Что делать при наведении на ссылку */
+a:hover {
+  color:red;
+}
+
+  /* Этим свойством добавляем подчеркивание через создание псевдокласса */
+a::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 0;
+  transform: translateY(1.5em);
+  border-bottom: 0px solid black ;
+  width: 100px;
+}
+
+h1 {
+  font-size: 2em;
+}
+
+h2 {
+  font-size: 1.5em;
+  margin: 1.25em 0;
+}
+
+  /* Свойства фотографии*/
+.photo {
+  border-radius: 100px;
+  /* Радиус скругления */
+  border: 3px solid transparent;
+  /* Параметры рамки */
+  box-shadow: 0 4px 15px 0px rgba(0, 0, 0, 0.52);
+  object-fit: cover;
+}
+
+
+
+
+
+.photo1 {
+  border-radius: 100px;
+  /* Радиус скругления */
+  border: 3px solid transparent;
+  /* Параметры рамки */
+  box-shadow: 0 4px 15px 0px rgba(255, 255, 255, 0.52);
+  object-fit: cover;
+}
+
+
+.photo1:hover {
+  border: 3px solid rgb(250, 250, 250);
+}
+
+
+
+
+
+.photo2 {
+  border-radius: 100px;
+  /* Радиус скругления */
+  border: 3px solid transparent;
+  /* Параметры рамки */
+  box-shadow: 0 4px 15px 0px rgba(29, 4, 248, 0.52);
+  object-fit: cover;
+}
+
+
+.photo2:hover {
+  border: 3px solid rgb(0, 26, 255);
+}
+
+
+
+
+.photo3 {
+  border-radius: 100px;
+  /* Радиус скругления */
+  border: 3px solid transparent;
+  /* Параметры рамки */
+  box-shadow: 0 4px 15px 0px rgba(252, 2, 2, 0.52);
+  object-fit: cover;
+}
+
+
+.photo3:hover {
+  border: 3px solid rgb(230, 73, 46);
+}
+
+
+
+
+
+  /* Эффект наведения на картинку */
+.photo:hover {
+  border: 3px solid red;
+}
+.btn-1{
+  background: red;
+}
+
+.profyl {
+  position: absolute;
+  right: 33%;
+  bottom:20%;
+  
+}
+
+
+.rectangle{
+  width: 100%;
+  height: 100%;
+  border:1px solid;
+  margin:auto;
+  background: #587c9d;}
+  .text{
+  color: #ffffff;
+  
+}
+
+
+
+.back {/* фон  */
+  position: fixed; /* Фиксированное положение */
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: black; /* Черный фон */
+        opacity: 1; /* Прозрачность */
+}
+
+.back1 { /* фон профиля */
+  background: #9c9a9a; /* Цвет фона */
+  color: #fff; /* Цвет текста */
+  padding: 20px; /* Поля вокруг текста */
+  border-radius: 30px; /* Уголки */
+  width: 600px; /* Ширина прямоугольника */
+  opacity: 0.8; /* Прозрачность */
+}
+
+
+
+.prewy {
+  position: absolute;
+  right: 200px ;
+  margin-top: -300px;
+}
+
+.myTextarea {
+  position: absolute;
+  margin-top: -220px;
+  background: #747171;
+  width: 300px; /* Ширина поля */
+  left: 300px;
+  height: 150px; /* Высота поля */
+  resize: none; /* Отключение возможности изменения размера */
+  padding: 10px; /* Отступ для текста */
+  border: 1px solid #020202; /* Граница */
+  box-sizing: border-box; /* Учитываем отступ и границу в ширину */
+  font-family: sans-serif; /* Шрифт */
+  font-size: 16px; /* Размер шрифта */
+  
+}
